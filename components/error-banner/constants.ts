@@ -1,0 +1,1 @@
+export const ERROR_MESSAGE_GENERIC = "An error has occured...";
