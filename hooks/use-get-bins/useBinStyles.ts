@@ -2,12 +2,13 @@ import { Bin } from "@/components/trash-bin-list/model";
 import { useMemo } from "react";
 
 export const useBinStyles = (bin : Bin) => {
-
-    const fillPercent = useMemo(() => {
+    
+  const fillPercent = useMemo(() => {
     if (!bin.totalCapacity) return 0;
+    const adjustedLevel =  100-Math.round((bin.currentLevel / bin.totalCapacity) * 100)
     return Math.min(
       100,
-      Math.round((bin.currentLevel / bin.totalCapacity) * 100)
+      adjustedLevel < 0? 0 : adjustedLevel
     );
   }, [bin.currentLevel, bin.totalCapacity]);
 
