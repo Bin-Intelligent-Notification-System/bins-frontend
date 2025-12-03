@@ -12,8 +12,8 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: "#ffffffff", dark: "#000000ff" }}
       headerImage={
         <Image
-          source={require("@/assets/images/concordia-logo2.png")}
-          style={styles.reactLogo}
+          source={require("@/assets/images/bins-logo.png")}
+          style={styles.binsLogo}
         />
       }
     >
@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
   },
-  reactLogo: {
-    height: 220,
-    width: 290,
+  binsLogo: {
+    height: 250,
+    width: 420,
     bottom: 0,
-    left: 55,
+    left: 0,
     position: "absolute",
   },
 });
