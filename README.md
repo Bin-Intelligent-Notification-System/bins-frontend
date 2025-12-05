@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# BINS Front-End  
+## *Bin Intelligent Notification System — Mobile Application*
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<img width="200" height="400" alt="bins-frontend-snapshot" src="https://github.com/user-attachments/assets/58abcf70-8385-4d0e-b93b-e227dc77e9d8" />
 
-## Get started
+## Description
+The **BINS Front-End** is a React Native Expo application designed for real-time monitoring of waste-bin capacity across a smart campus environment.  
+It consumes data from the BINS microservice backend and provides an intuitive, polished interface for facility staff to quickly identify which bins require attention.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+### Real-Time Bin Monitoring
+- Live status updates for each bin (Normal, Getting Full, Full/Overflowing)  
+- Color-coded capacity cards (Green / Yellow / Red)  
+- Percentage fill bars and last updated timestamps  
 
-   ```bash
-   npx expo start
-   ```
+### Explore & Navigation
+- Browse bins by building or category  
+- Bottom tab navigation (Home / Explore)  
+- Smooth and responsive UI  
 
-In the output, you'll find options to open the app in a
+### API Integration
+- Axios with interceptors  
+- TanStack Query for caching, background refresh and stale-time updates  
+- Integration with Spring Boot microservices and remote PostgresSQL Database
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Modern UI/UX
+- Clean dashboard layout  
+- Icons for bin types (recycling, waste, compost)  
+- Smooth scrolling, polished visuals  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Tech Stack
 
-## Get a fresh project
+| Layer | Technologies |
+|-------|--------------|
+| **Framework** | React Native (Expo) |
+| **State & Data** | TanStack Query, React Context |
+| **Networking** | Axios | NGrok
+| **Navigation** | React Navigation |
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
